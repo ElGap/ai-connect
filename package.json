@@ -1,0 +1,37 @@
+{
+  "name": "@elgap/ai-connect",
+  "version": "1.0.0",
+  "description": "A minimalist, no-fluff client for open-source LLMs.",
+  "keywords": [
+    "ai",
+    "llm",
+    "ollama",
+    "typescript",
+    "llm-connector"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx test.ts"
+  },
+  "dependencies": {
+    "ofetch": "^1.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elgap/ai-connect.git"
+  },
+  "author": "Ivan Pavkovic Pavko",
+  "license": "Apache-2.0"
+}
