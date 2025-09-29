@@ -1,5 +1,5 @@
 # ==================================
-# === Sistemski fajlovi (OS & IDE)
+# === System Files (OS & IDE)
 # ==================================
 .DS_Store
 Thumbs.db
@@ -38,4 +38,3 @@ logs/
 dist/
 .npm
 /coverage
-
