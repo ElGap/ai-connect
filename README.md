@@ -14,15 +14,17 @@ get a response, without the heavy abstractions of larger frameworks.
 ### Note on the ElGap Ecosystem
 `@elgap/ai-connect` is the foundational "engine" package for the ElGap ecosystem. It is designed to be a simple, 
 resilient, and provider-agnostic client. For more advanced, "out-of-the-box" agentic capabilities like 
-constitution-based guardrails, chat history ... please see our companion package, [`@elgap/ai-composer`](https://github.com/ElGap/ai-composer);
+constitution-based guardrails, chat history ... please see our companion package, [`@elgap/ai-composer`](https://github.com/ElGap/ai-composer)
+
+Both, `@elgap/ai-connect` and [@elgap/ai-composer](https://github.com/ElGap/ai-composer) are under continuous 
+development. At the moment they support only `/api/generate` Ollama endpoint (single response object or stream of objects).
 
 ### A Note on Co-Creation
 
 This package was co-created in a deep, multi-month symbiotic dialogue between a human WedDev artisan 
-[Ivan Pavkovic](https://github.com/pawco) and AI (Google's Gemini). The process served as both a real-world 
+[Ivan Pavković](https://pavko.info) and AI (Google's Gemini). The process served as both a real-world 
 case study in Human-AI partnership and as a practical journey for Ivan to learn TypeScript, npm package creation and to 
-dive into the world of LLM's. 
-The code you see is a direct result of this iterative, "sparring" process.
+dive into the world of LLM's. The code you see is a direct result of this iterative, "sparring" process.
 
 ### Features
 
@@ -44,9 +46,9 @@ import { OllamaProvider } from "@elgap/ai-connect";
 
 async function main () {
     const llama3 = new OllamaProvider( {
-        model: "llama3.1:latest", //Adjust value from model to match your local model
-        baseUrl: "http://localhost:11434", //Optional. efault for Ollama, change if it's elsewhere
-        temperature: 0.7 //Optional. Default to 0.7 but you can change it from 0.1-1)
+        model: "llama3.1:latest", //Adjust model name to match your local model
+        baseUrl: "http://localhost:11434", //Optional. Default for Ollama, change if it's elsewhere
+        temperature: 0.7 //Optional. Default to 0.7 but you can change it from 0-1)
     })
     const systemPrompt = "You are helpful and harmless AI assistant";
     const prompt: string = "Why the sky is blue?"
