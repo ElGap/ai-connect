@@ -64,7 +64,7 @@ You can find a collection of ready-to-run examples in the /examples directory. W
 and experiment.
 
 ```shell
-git clone git@github.com:ElGap/ai-connect.git
+git clone https://github.com/ElGap/ai-connect.git
 npm install
 
 npm run example:ollama
